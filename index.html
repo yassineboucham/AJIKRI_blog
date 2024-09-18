@@ -58,27 +58,60 @@
 <div class="container blog-post">
     <div class="row">
         <div class="col-lg-8 mx-auto">
-            <h2>Inspiration Behind Ajikri</h2>
-            <p>Ajikri was born out of the idea to connect people looking to rent a variety of items – from vehicles to real estate and even clothing. The current rental market is often scattered, and Ajikri aims to bring all those elements into a unified platform where users can easily find and list rental ads.</p>
+            <h2>Introduction</h2>
+            <p>Welcome to Ajikri – a unique platform designed to bring together people who are either looking to rent or are renting out various assets like vehicles, real estate, and clothing. This project was created with a vision to unify the fragmented rental market into one cohesive platform. Our team consists of:</p>
+            <ul>
+                <li>Yassine Boucham: Full-stack Developer (Frontend & Backend)</li>
+                <li>Jamal: Data Collection</li>
+                <li>Simo: Marketing Strategy and Branding</li>
+            </ul>
+            <p>We designed Ajikri to meet the needs of individuals and businesses looking for an easy-to-use platform to connect with renters. My personal focus on this project was to handle the frontend and backend development. We worked tirelessly on the project over the course of three months, following Agile principles for efficient project management.</p>
 
             <img src="logo_name.png" alt="Ajikri screenshot">
-            
+
+            <h2>Inspiration Behind Ajikri</h2>
+            <p>Ajikri was inspired by a deep interest in simplifying the rental experience. Growing up, I always saw the hassle my parents went through when trying to rent out our family-owned properties or when we needed to rent cars for road trips. We faced confusing processes, unreliable contacts, and miscommunication. I wanted to solve this, creating an organized and user-friendly rental marketplace where users can both list and find items efficiently.</p>
+            <p>The desire to simplify renting led to the creation of Ajikri, designed to cater to people who value convenience and reliability when renting items, whether it's for personal or business use.</p>
+
             <h3>Technology and Architecture</h3>
-            <p>The platform is built using the Laravel framework for backend and Bootstrap for the frontend, ensuring a responsive and scalable user experience. We utilized MySQL for database management and integrated Google Maps for location-based listings.</p>
+            <p>Ajikri’s backend is built with the Laravel framework, chosen for its MVC architecture and robust community support. For the frontend, we employed Bootstrap to ensure responsive design across all devices. MySQL serves as the database, managing dynamic content from user posts. We integrated Google Maps to provide location-based listings, enabling users to filter rentals based on their location.</p>
+            <p>One of the key features of our architecture was the efficient use of APIs, enabling users to interact seamlessly with the platform. Below is an architectural diagram outlining the flow of data across the system:</p>
+
+            <img src="architecture_diagram.png" alt="Ajikri architecture diagram">
 
             <h3>Core Algorithms</h3>
-            <p>The core of the platform relies on efficient search and filtering algorithms, allowing users to quickly find ads based on category, location, and availability. We optimized the database queries and caching mechanisms to ensure smooth performance even as the user base grows.</p>
+            <p>The core functionality of Ajikri revolves around its search and filtering capabilities. We designed the search algorithms to be both fast and scalable, indexing items by categories, locations, and availability. This required a combination of efficient database queries and caching strategies to handle increased traffic without compromising performance. The algorithm continuously refines search results based on user interactions, ensuring relevant and timely results.</p>
 
             <h3>Collaboration and Timeline</h3>
-            <p>Our team consisted of developers, data collectors, and marketers. Using Agile methodologies, we broke down the project into manageable sprints, regularly testing and adjusting features to align with user feedback. Tools like Trello and GitHub were essential in tracking our progress.</p>
+            <p>Ajikri’s development spanned 12 weeks, broken into sprints using Agile methodologies. We met weekly to review progress and adjust based on feedback. Simo focused on branding and marketing efforts, while Jamal collected essential rental data. My role involved both frontend and backend programming, and I collaborated closely with Jamal on data integration.</p>
 
             <h3>Challenges and Learnings</h3>
-            <p>Building Ajikri came with its fair share of challenges, particularly in integrating Google Maps and ensuring optimal performance with dynamic data loading. Through these obstacles, we learned a great deal about web performance optimization and the importance of user-centered design.</p>
+            <p>One of the most difficult technical challenges we faced was optimizing Google Maps integration for dynamic data. Initially, the maps were slow to load and didn’t sync well with real-time listings. To solve this, I had to dive deep into Google Maps API and improve data fetching by batching the map updates, reducing unnecessary API calls.</p>
+            <p>This challenge taught me the importance of balancing performance and user experience, as well as the value of optimization techniques. I also gained a deeper understanding of API rate limits and how to work around them.</p>
+
+            <h3>What We’ve Accomplished</h3>
+            <p>Ajikri has successfully provided users with a simplified way to find rental items, from vehicles to clothing. We designed a responsive and intuitive UI that caters to both desktop and mobile users. Our search engine is optimized for speed and relevance, and the platform is fully integrated with location-based search via Google Maps.</p>
+            <p>Here are the three key features we’ve implemented:</p>
+            <ul>
+                <li>Location-based filtering powered by Google Maps</li>
+                <li>Category-based listings to help users navigate effortlessly</li>
+                <li>Responsive design compatible with both desktop and mobile devices</li>
+            </ul>
+
+            <h3>Technical Challenge in Depth</h3>
+            <p>When integrating Google Maps, I encountered a significant performance bottleneck while fetching dynamic location-based listings. The challenge was balancing real-time data with API rate limitations. Initially, the map struggled to update smoothly when users applied multiple filters at once, leading to delays in rendering markers on the map.</p>
+            <p>To tackle this, I researched batching techniques that would allow me to group multiple data points into a single map update. This reduced API calls and improved load times significantly. I also optimized how the listings were rendered by implementing lazy loading techniques, only displaying the map markers within the visible area of the user's viewport. This optimization reduced the workload on the client’s browser, leading to smoother map interactions.</p>
+
+            <h3>Lessons Learned</h3>
+            <p>Through the process of building Ajikri, I gained valuable insights into full-stack development, from efficient backend APIs to creating intuitive frontend user interfaces. I learned the importance of optimizing for performance, especially when working with real-time data on a large scale.</p>
+            <p>What I would do differently in the future is focus more on user-centered design earlier in the process. While we eventually arrived at a user-friendly interface, involving users earlier on would have provided more direction in shaping the final product. Moving forward, I plan to prioritize user feedback throughout the development process, not just at the end.</p>
 
             <div class="author-info text-center">
                 <img src="350847930_297479935948978_2159537297800573281_n.jpg" alt="Author">
                 <h5>Written by Yassine Boucham</h5>
-                <p>Software Engineer passionate about creating innovative solutions in web development.</p>
+                <p>Software Engineer passionate about creating innovative solutions in web development. You can check out Ajikri on GitHub and see the deployed project below:</p>
+                <a href="https://github.com/yassineboucham/ajikri" class="btn btn-primary">View on GitHub</a>
+                <a href="https://ajikri.com" class="btn btn-primary">Visit Deployed Site</a>
                 <a href="https://www.linkedin.com/in/yassineboucham/" class="btn btn-primary">Connect on LinkedIn</a>
             </div>
         </div>
